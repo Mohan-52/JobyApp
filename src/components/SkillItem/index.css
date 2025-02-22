@@ -1,0 +1,51 @@
+.skill-name {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  width: 300px;
+}
+
+.skill-img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.skillaListCon {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  padding-left: 0;
+}
+
+.h-m {
+  margin-top: 30px;
+}
+
+.life-at-com {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.life-desc {
+  width: 60%;
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anchor {
+  text-decoration: none;
+  color: #6366f1;
+}
+
+.visit-link {
+  color: #6366f1;
+  margin-left: 10px;
+}

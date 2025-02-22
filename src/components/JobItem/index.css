@@ -1,0 +1,57 @@
+.job-card {
+  width: 730px;
+  padding: 25px;
+  background-color: #272727;
+  color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.c-logo {
+  width: 80px;
+}
+
+.logo-tile {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: #fbbf24;
+}
+
+.titile-con {
+  margin-left: 20px;
+}
+
+.rating {
+  display: inline;
+  margin-left: 5px;
+}
+
+.icons-attri {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.lcon-val {
+  display: flex;
+}
+
+.val {
+  margin-left: 10px;
+}
+
+.desc {
+  margin: 10px 0;
+}
+
+.bag {
+  margin-left: 20px;
+}
+
+.icons {
+  color: #f1f5f9;
+}

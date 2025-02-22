@@ -1,0 +1,19 @@
+.similar-job-card {
+  width: 400px;
+  padding: 20px;
+  background-color: #272727;
+  color: #fff;
+  margin: 10px 10px 10px 0;
+  border-radius: 10px;
+}
+
+.similar-jo-con {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mar-top {
+  margin-top: 30px;
+}

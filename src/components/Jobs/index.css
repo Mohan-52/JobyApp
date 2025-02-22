@@ -1,0 +1,93 @@
+.jobs-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 0;
+}
+
+.jobs-section {
+  padding: 20px;
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.profile-sec {
+  width: 95%;
+  height: 200px;
+}
+
+.filter-con {
+  color: #fff;
+}
+
+.checkbox-container {
+  display: block;
+  padding-left: 0;
+}
+
+.filter-h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+label {
+  margin-left: 10px;
+}
+.checkbox {
+  margin: 10px 0;
+}
+
+.jobs-section {
+  display: flex;
+}
+
+.line {
+  margin: 20px 0;
+}
+
+.jobs-container {
+  margin-left: 20px;
+}
+
+.search-input {
+  height: 40px;
+  outline: none;
+  width: 300px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.mag-btn {
+  width: 50px;
+  background-color: #272727;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.magnify-con {
+  display: flex;
+  border: 1px solid #fff;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.mag-icon {
+  color: #f8fafc;
+}
+
+.no-res-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  color: #fff;
+  flex-direction: column;
+}
+
+.no-job-img {
+  margin-top: 20px;
+  width: 350px;
+}
