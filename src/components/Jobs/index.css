@@ -8,6 +8,7 @@
   padding: 20px;
   background-color: #000;
   min-height: 100vh;
+  gap: 20px;
 }
 
 .profile-sec {
@@ -22,6 +23,7 @@
 .checkbox-container {
   display: block;
   padding-left: 0;
+  list-style: none;
 }
 
 .filter-h1 {
@@ -45,7 +47,11 @@ label {
 }
 
 .jobs-container {
-  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-left: 0;
 }
 
 .search-input {
@@ -70,8 +76,10 @@ label {
 .magnify-con {
   display: flex;
   border: 1px solid #fff;
-  margin-left: 30px;
+
   border-radius: 5px;
+  width: 300px;
+  align-self: flex-start;
 }
 
 .mag-icon {
@@ -90,4 +98,12 @@ label {
 .no-job-img {
   margin-top: 20px;
   width: 350px;
+}
+
+@media (max-width: 767px) {
+  .jobs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

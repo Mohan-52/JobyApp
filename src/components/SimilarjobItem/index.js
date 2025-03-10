@@ -1,5 +1,4 @@
-import {BsStarFill} from 'react-icons/bs'
-import {BsBag} from 'react-icons/bs'
+import {BsStarFill, BsBag} from 'react-icons/bs'
 import {IoLocation} from 'react-icons/io5'
 import './index.css'
 
@@ -19,7 +18,11 @@ const SimilarjobItem = props => {
     <li>
       <div className="similar-job-card">
         <div className="img-title">
-          <img src={companyLogoUrl} className="similar job company logo" />
+          <img
+            src={companyLogoUrl}
+            alt="similar job company logo"
+            className="simlar-compay-img"
+          />
           <div className="h1-rating-img">
             <h1 className="h1">{title}</h1>
             <BsStarFill className="star" />

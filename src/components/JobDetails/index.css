@@ -30,6 +30,7 @@
   padding: 20px;
   border-radius: 10px;
   margin: 0 auto;
+  width: 98%;
 }
 
 .img-title {
@@ -46,10 +47,32 @@
 }
 
 .jd {
-  font-size: 20px;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .similar-job-h1 {
   color: #fff;
-  margin: 30px 120px;
+  margin: 20px 0;
+}
+
+.life-desc {
+  width: 60%;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 567px) {
+  .life-at-com {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .life-at-com-img {
+    width: 98%;
+  }
+  .life-desc {
+    width: 100%;
+  }
 }

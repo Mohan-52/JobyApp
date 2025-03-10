@@ -136,7 +136,7 @@ class Jobs extends Component {
   renderOnSucces = () => {
     const {jobsList} = this.state
     return (
-      <ul className='jobs-container'>
+      <ul className="jobs-container">
         {jobsList.map(job => (
           <JobItem jobDetails={job} key={job.id} />
         ))}
@@ -170,13 +170,11 @@ class Jobs extends Component {
     )
   }
 
-  loadingView = () => {
-    return (
-      <div className='loader-container' data-testid='loader'>
-        <Loader type='ThreeDots' color='#ffffff' height='50' width='50' />
-      </div>
-    )
-  }
+  loadingView = () => (
+    <div className="loader-container" data-testid="loader">
+      <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
+    </div>
+  )
 
   profileSuccess = () => {
     const {profileData} = this.state
@@ -200,46 +198,40 @@ class Jobs extends Component {
     }
   }
 
-  profileFailureView = () => {
-    return (
-      <div>
-        <button type='button' className='logot-btn' onClick={this.getProfile}>
-          Retry
-        </button>
-      </div>
-    )
-  }
+  profileFailureView = () => (
+    <div>
+      <button type="button" className="logot-btn" onClick={this.getProfile}>
+        Retry
+      </button>
+    </div>
+  )
 
-  jobsFailureView = () => {
-    return (
-      <div className='failure-container'>
-        <img
-          src='https://assets.ccbp.in/frontend/react-js/failure-img.png'
-          alt='failure view'
-          className='no-job-img'
-        />
-        <h1>Oops! Something Went Wrong</h1>
-        <p>We cannont seem to find the page you are looking for</p>
-        <button type='button' className='logot-btn' onClick={this.getJobs}>
-          Retry
-        </button>
-      </div>
-    )
-  }
+  jobsFailureView = () => (
+    <div className="failure-container">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
+        alt="failure view"
+        className="no-job-img"
+      />
+      <h1>Oops! Something Went Wrong</h1>
+      <p>We cannont seem to find the page you are looking for</p>
+      <button type="button" className="logot-btn" onClick={this.getJobs}>
+        Retry
+      </button>
+    </div>
+  )
 
-  noResultView = () => {
-    return (
-      <div className='no-res-con'>
-        <img
-          src='https://assets.ccbp.in/frontend/react-js/no-jobs-img.png'
-          alt='no jobs'
-          className='no-job-img'
-        />
-        <h1>No Jobs Found</h1>
-        <p>We couldn't find any jobs. Try any other filters.</p>
-      </div>
-    )
-  }
+  noResultView = () => (
+    <div className="no-res-con">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/no-jobs-img.png"
+        alt="no jobs"
+        className="no-job-img"
+      />
+      <h1>No Jobs Found</h1>
+      <p>We couldn't find any jobs. Try any other filters.</p>
+    </div>
+  )
 
   renderJobsViews = () => {
     const {jobListStatus} = this.state
@@ -263,66 +255,60 @@ class Jobs extends Component {
     return (
       <>
         <Header />
-        <div className='jobs-section'>
-          <div className='profile-filter-section'>
-            <div className='profile-sec'>{this.renderProfileViews()}</div>
-            <hr className='line' />
-            <div className='filter-con'>
-              <h1 className='filter-h1'>Type of Employment</h1>
-              <ul className='checkbox-container'>
-                {employmentTypesList.map(type => {
-                  return (
-                    <li className='checkbox' key={type.employmentTypeId}>
-                      <input
-                        type='checkbox'
-                        id={type.employmentTypeId}
-                        value={type.employmentTypeId}
-                        onChange={this.hangleOnClick}
-                      />
-                      <label htmlFor={type.employmentTypeId}>
-                        {type.label}
-                      </label>
-                    </li>
-                  )
-                })}
+        <div className="jobs-section">
+          <div className="profile-filter-section">
+            <div className="profile-sec">{this.renderProfileViews()}</div>
+            <hr className="line" />
+            <div className="filter-con">
+              <h1 className="filter-h1">Type of Employment</h1>
+              <ul className="checkbox-container">
+                {employmentTypesList.map(type => (
+                  <li className="checkbox" key={type.employmentTypeId}>
+                    <input
+                      type="checkbox"
+                      id={type.employmentTypeId}
+                      value={type.employmentTypeId}
+                      onChange={this.hangleOnClick}
+                    />
+                    <label htmlFor={type.employmentTypeId}>{type.label}</label>
+                  </li>
+                ))}
               </ul>
             </div>
-            <hr className='line' />
-            <div className='filter-con'>
-              <h1 className='filter-h1'>Salary Range</h1>
-              <ul className='checkbox-container'>
-                {salaryRangesList.map(range => {
-                  return (
-                    <li className='checkbox' key={range.salaryRangeId}>
-                      <input
-                        type='radio'
-                        id={range.salaryRangeId}
-                        name='salaryRange'
-                        onChange={this.selectPackage}
-                        value={range.salaryRangeId}
-                      />
-                      <label htmlFor={range.salaryRangeId}>{range.label}</label>
-                    </li>
-                  )
-                })}
+            <hr className="line" />
+            <div className="filter-con">
+              <h1 className="filter-h1">Salary Range</h1>
+              <ul className="checkbox-container">
+                {salaryRangesList.map(range => (
+                  <li className="checkbox" key={range.salaryRangeId}>
+                    <input
+                      type="radio"
+                      id={range.salaryRangeId}
+                      name="salaryRange"
+                      onChange={this.selectPackage}
+                      value={range.salaryRangeId}
+                    />
+                    <label htmlFor={range.salaryRangeId}>{range.label}</label>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
-          <div className='jobs-container'>
-            <div className='magnify-con'>
+          <div className="jobs-container">
+            <div className="magnify-con">
               <input
-                type='search'
-                className='search-input'
-                placeholder='Search'
+                type="search"
+                className="search-input"
+                placeholder="Search"
                 onChange={this.getSearchRes}
               />
               <button
-                className='mag-btn'
+                className="mag-btn"
                 onClick={this.getJobs}
-                type='button'
-                data-testid='searchButton'
+                type="button"
+                data-testid="searchButton"
               >
-                <BsSearch className='mag-icon' />
+                <BsSearch className="mag-icon" />
               </button>
             </div>
 

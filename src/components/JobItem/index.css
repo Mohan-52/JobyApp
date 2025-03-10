@@ -1,10 +1,11 @@
 .job-card {
-  width: 730px;
-  padding: 25px;
+  width: 95%;
+  max-width: 730px;
+  padding: 20px;
   background-color: #272727;
   color: #fff;
-  margin: 10px;
   border-radius: 20px;
+  list-style: none;
 }
 
 .c-logo {
@@ -54,4 +55,17 @@
 
 .icons {
   color: #f1f5f9;
+}
+
+@media (max-width: 767px) {
+  .job-card {
+    width: 100%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
 }

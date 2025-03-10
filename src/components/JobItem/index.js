@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom'
-import {BsStarFill} from 'react-icons/bs'
-import {BsBag} from 'react-icons/bs'
+import {BsStarFill, BsBag} from 'react-icons/bs'
 import {IoLocation} from 'react-icons/io5'
 
 import './index.css'
@@ -22,11 +21,7 @@ const JobItem = props => {
     <Link to={`/jobs/${id}`} className="link">
       <li className="job-card">
         <div className="logo-tile">
-          <img
-            src={companyLogoUrl}
-            alt="company logo"
-            className="c-logo"
-          />
+          <img src={companyLogoUrl} alt="company logo" className="c-logo" />
           <div className="titile-con">
             <h1>{title}</h1>
             <BsStarFill className="star" />

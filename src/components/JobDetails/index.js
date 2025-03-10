@@ -1,13 +1,12 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
-import Header from '../Header'
 
-import {BsStarFill} from 'react-icons/bs'
-import {BsBag} from 'react-icons/bs'
+import {BsStarFill, BsBag} from 'react-icons/bs'
 import {IoLocation} from 'react-icons/io5'
 import {FaExternalLinkAlt} from 'react-icons/fa'
 
 import Loader from 'react-loader-spinner'
+import Header from '../Header'
 
 import SkillItem from '../SkillItem'
 import SimilarjobItem from '../SimilarjobItem'
@@ -98,29 +97,20 @@ class JobDetails extends Component {
     }
   }
 
-  jobsFailureView = () => {
-    {
-      /*div className="failure-container"*/
-    }
-    return (
-      <>
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
-          alt="failure view"
-          className="no-job-img"
-        />
-        <h1>Oops! Something Went Wrong</h1>
-        <p>We cannot seem to find the page you are looking for</p>
-        <button
-          className="logot-btn"
-          type="button"
-          onClick={this.getJobDetails}
-        >
-          Retry
-        </button>
-      </>
-    )
-  }
+  jobsFailureView = () => (
+    <>
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
+        alt="failure view"
+        className="no-job-img"
+      />
+      <h1>Oops! Something Went Wrong</h1>
+      <p>We cannot seem to find the page you are looking for</p>
+      <button className="logot-btn" type="button" onClick={this.getJobDetails}>
+        Retry
+      </button>
+    </>
+  )
 
   successView = () => {
     const {jobDetails, similarJobs, skillsList, lifeAtCompany} = this.state
@@ -182,7 +172,11 @@ class JobDetails extends Component {
           <h1 className="desc h-m">Life at Company</h1>
           <div className="life-at-com">
             <p className="life-desc">{lifeAtCompany.description}</p>
-            <img src={lifeAtCompany.imageUrl} alt="life at company" />
+            <img
+              src={lifeAtCompany.imageUrl}
+              alt="life at company"
+              className="life-at-com-img"
+            />
           </div>
         </div>
         <div className="similar-job">
@@ -197,13 +191,11 @@ class JobDetails extends Component {
     )
   }
 
-  loadingView = () => {
-    return (
-      <div className="loader-container" data-testid="loader">
-        <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
-      </div>
-    )
-  }
+  loadingView = () => (
+    <div className="loader-container" data-testid="loader">
+      <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
+    </div>
+  )
 
   renderViews = () => {
     const {status} = this.state

@@ -6,7 +6,7 @@ const SkillItem = props => {
   return (
     <li className="skill-name">
       <img src={imageUrl} alt={name} className="skill-img" />
-      <h1>{name}</h1>
+      <h1 className="skillname">{name}</h1>
     </li>
   )
 }

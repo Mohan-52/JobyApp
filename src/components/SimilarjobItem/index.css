@@ -1,5 +1,6 @@
 .similar-job-card {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   padding: 20px;
   background-color: #272727;
   color: #fff;
@@ -10,10 +11,13 @@
 .similar-jo-con {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto;
+  padding: 0;
 }
 
 .mar-top {
   margin-top: 30px;
+}
+
+.simlar-compay-img {
+  width: 80px;
 }
